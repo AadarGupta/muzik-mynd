@@ -7,6 +7,10 @@ import logo from './logo.png';
 // Consult react-reveal for animations
 
 function App() {
+  const CLIENT_ID = process.env.REACT_APP_CLIENT_ID;
+  const REDIRECT_URI = process.env.REACT_APP_REDIRECT_URI;
+  const AUTH_ENDPOINT = process.env.REACT_APP_AUTH_ENDPOINT;
+  const RESPONSE_TYPE = process.env.REACT_APP_RESPONSE_TYPE;
   const scopes = ['user-top-read', 'user-library-read'];
 
   // useState for the token
@@ -34,12 +38,10 @@ function App() {
 
   // authenticate with spotify login
   const authSpotify = () => {
-    window.location.assign(
-      `${process.env.REACT_APP_AUTH_ENDPOINT}?client_id=${
-        process.env.REACT_APP_CLIENT_ID
-      }&redirect_uri=${process.env.REACT_APP_REDIRECT_URI}&scope=${scopes.join(
+    window.location.replace(
+      `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&scope=${scopes.join(
         '%20'
-      )}&response_type=${process.env.REACT_APP_RESPONSE_TYPE}&show_dialog=true`
+      )}&response_type=${RESPONSE_TYPE}&show_dialog=true`
     );
   };
 
