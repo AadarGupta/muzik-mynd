@@ -1,0 +1,92 @@
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .Recommendation-header {
+    background-color: var(--white);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: var(--dark-grey);
+    font-family: proximaNova;
+}
+
+.logoBlue {
+  height: 8vh;
+  position: absolute;
+  left: 1vw;
+}
+
+.title {
+  font-family: logo;
+  letter-spacing: 5px;
+  height: 8vh;
+  top: 1vh;
+  color: var(--st-patrick-blue);
+  font-weight: bolder;
+}
+
+  .Recommendation-content {
+    height: 90vh;
+    color: var(--white);
+  }
+
+.Recommended-artist {
+  height: 0;
+  color: var(--st-patrick-blue);
+  background-color: var(--st-patrick-blue);
+}
+
+.Artist-header {
+  padding-top: 5vh;
+}
+
+.spotImg {
+  height: 45vh;
+  width: auto;
+  padding: 2vh;
+  border-radius: 3vh;
+}
+
+.spotImg:hover {
+  opacity: 0.8;
+}
+
+
+.Recommended-song {
+  float: left;
+  height: 60vh;
+  padding-top: 30vh;
+  background-color: var(--lilac);
+  color: var(--white);
+  width: 50%;
+}
+
+.Recommended-playlist {
+  float: right;
+  height: 60vh;
+  padding-top: 30vh;
+  background-color: var(--thistle);
+  color: var(--white);
+  width: 50%;
+}
+
+.Image-container {
+  height: 45vh;
+  width: auto;
+  background: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.songName, .playlistName {
+  color: var(--white);
+}
+  
+  
